@@ -1,0 +1,144 @@
+.search__form {
+  background: url(../../images/dekstop.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 160px 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search__form_title {
+  font-family: Roboto Slab, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 64px;
+  color: #ffffff;
+  text-align: start;
+  width: 608px;
+  margin: 0;
+}
+
+.search__form_text {
+  font-family: Roboto, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  width: 608px;
+  text-align: start;
+  padding: 32px 0 64px;
+  margin: 0;
+}
+.search__form_fieldset {
+  border: none;
+  outline: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.search__form_input {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  width: 608px;
+  height: 62px;
+  background: #ffffff;
+  border: 1px solid #d1d2d6;
+  border-radius: 100px;
+  padding-left: 24px;
+  color: #1a1b22;
+  border: none;
+  outline: none;
+}
+.search__form_input::placeholder {
+  color: #b6bcbf;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.search__form_button {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  position: absolute;
+  top: 0;
+  right: -2px;
+  bottom: 0;
+  background: #2f71e5;
+  border-radius: 100px;
+  width: 168px;
+  height: 64px;
+  border: none;
+  outline: none;
+  padding: 0;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.search__form_button:hover {
+  background: #347eff;
+  box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+  transition: 0.3s linear;
+}
+
+.search__form_button:focus {
+  background: #2a65cc;
+  box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+  transition: 0.3s linear;
+}
+
+@media screen and (max-width: 800px) {
+  .search__form {
+    background: url(../../images/tablet.jpg) no-repeat;
+    padding: 104px 0 48px;
+  }
+  .search__form_title {
+    font-size: 36px;
+    line-height: 40px;
+    width: 452px;
+  }
+  .search__form_text {
+    width: 452px;
+    padding: 16px 0 48px;
+  }
+  .search__form_input {
+    height: 55px;
+    width: 448px;
+  }
+  .search__form_button {
+    width: 160px;
+    height: 58px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .search__form {
+    background: url(../../images/mobile.jpg) no-repeat;
+    background-size: 100%;
+    padding: 86px 16px 32px;
+  }
+  .search__form_title {
+    width: 288px;
+  }
+  .search__form_text {
+    width: 288px;
+    padding: 16px 0 48px;
+  }
+  .search__form_input {
+    height: 55px;
+    width: 272px;
+    padding-left: 16px;
+  }
+  .search__form_button {
+    width: 288px;
+    height: 56px;
+    position: static;
+    margin-top: 16px;
+  }
+  .search__form_fieldset {
+    width: 288px;
+  }
+}
