@@ -1,0 +1,118 @@
+.nav {
+  display: flex;
+}
+
+.nav__link {
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  margin-right: 34px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.nav__link:hover {
+  opacity: 0.7;
+  transition: 0.2s linear;
+}
+
+@media screen and (max-width: 900px) {
+  .nav__link {
+    font-size: 16px;
+    margin-right: 16px;
+  }
+}
+
+.nav__link_black {
+  color: #1a1b22;
+}
+.nav__button {
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  height: 48px;
+  padding: 0 15px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: transparent;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
+}
+.nav__button:hover {
+  opacity: 0.7;
+  transition: 0.2 linear;
+}
+
+.nav__button_black {
+  color: #1a1b22;
+  border: 1px solid #1a1b22;
+}
+.nav__img {
+  margin-left: 6px;
+}
+.nav__link_active {
+  border-bottom: 3px solid;
+}
+.nav__link_not-active {
+  border-bottom: none;
+}
+
+.nav__link-mobile {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  background: #1a1b22;
+  border-radius: 0 0 16px 16px;
+  top: 56px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: 16px 0;
+  height: 230px;
+}
+
+@media screen and (max-width: 680px) {
+  .nav__button {
+    font-size: 18px;
+    margin: 24px 0 0;
+    height: 56px;
+    background-color: #fff;
+    color: #1a1b22;
+  }
+  .nav__link {
+    margin: 24px 0 0;
+    width: 160px;
+    color: #ffff;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background: #1a1b22;
+    position: absolute;
+    padding: 30px 16px 30px;
+    border-radius: 0 0 16px 16px;
+    top: 56px;
+    left: 0;
+    right: 0;
+  }
+  .nav__link_active {
+    border-bottom: none;
+  }
+}
+
+.nav_mobile_open {
+  display: flex;
+}
