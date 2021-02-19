@@ -1,9 +1,19 @@
 import React from "react";
 import "./SearchForm.css";
 
-function SearchForm() {
+function SearchForm({ handleSearchClick }) {
+  const [inputSearch, setInputSearch] = React.useState("");
+  function handleChange(e) {
+    setInputSearch(e.target.value);
+  }
+  function handleSubmit(e) {
+    e.preventDefault();
+    handleSearchClick(inputSearch);
+    setInputSearch('')
+  }
+
   return (
-    <form className="search__form">
+    <form className="search__form" onSubmit={handleSubmit}>
       <h1 className="search__form_title">
         Что творится в <br />
         мире?
@@ -18,6 +28,8 @@ function SearchForm() {
           type="text"
           placeholder="Введите тему новости"
           required
+          onChange={handleChange}
+          value={inputSearch || ''}
         ></input>
         <button className="search__form_button" type="submit">
           Искать

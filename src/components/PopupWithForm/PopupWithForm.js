@@ -11,12 +11,14 @@ function PopupWithForm({
   button,
   name,
   link,
+  onSubmit,
+  authError
 }) {
   return (
     <section
       className={` popup popup_${name} ${isOpen ? "popup_opened" : "popup"}`}
     >
-      <form className="popup__form">
+      <form className="popup__form" onSubmit={onSubmit}>
         <button
           type="button"
           onClick={onClose}
@@ -24,6 +26,7 @@ function PopupWithForm({
         ></button>
         <h3 className="popup__title">{title}</h3>
         {children}
+        <span className="popup__button-error">{authError || ''}</span>
         <button
           type="submit"
           className={
@@ -34,7 +37,6 @@ function PopupWithForm({
         </button>
         <p className="popup__link">
           или
-          {/* <span className="popup__input-error">Такой пользователь уже есть</span> */}
           <button
             type="button"
             onClick={hadlePopup}

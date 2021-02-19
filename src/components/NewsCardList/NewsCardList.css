@@ -2,6 +2,9 @@
   background-color: #f5f6f7;
   padding: 80px 104px;
 }
+.news-card-list_notactive{
+  display: none
+}
 .news-card-list__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
