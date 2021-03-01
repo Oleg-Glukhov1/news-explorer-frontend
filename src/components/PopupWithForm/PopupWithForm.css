@@ -67,12 +67,13 @@
   border-radius: 100px;
   max-width: 360px;
   height: 64px;
-  margin: 40px 0 16px;
   border: none;
   cursor: pointer;
   color: #ffff;
   outline: none;
+  margin: 10px 0 16px;
 }
+
 .popup__button_disabled {
   background: #e6e8eb;
   color: #b6bcbf;
@@ -132,6 +133,15 @@
   margin: 3px 0 0;
   color: #ff0000;
   text-align: start;
+}
+.popup__button-error {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #FF0000;
+  margin: 20px 0 0;
 }
 
 @media screen and (max-width: 600px) {

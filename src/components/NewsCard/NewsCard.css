@@ -1,6 +1,6 @@
 .news-card {
   display: flex;
-  width: 100%;
+  max-width: 400px;
   flex-direction: column;
   position: relative;
   background-color: #ffffff;
@@ -66,7 +66,7 @@
   background-color: #ffffff;
 }
 
-.news-card__button_save:focus {
+.news-card__button_save_focus {
   background: url(../../images/bookmark-market.png) no-repeat;
   background-position: center;
   background-color: #ffffff;
@@ -116,6 +116,15 @@
   color: #1a1b22;
   margin: 0 24px 16px;
   text-align: start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+  box-orient: vertical;
 }
 
 .news-card__text {
@@ -149,6 +158,13 @@
   bottom: 24px;
   left: 24px;
   margin: 0;
+}
+.news-card__link{
+  text-decoration: none;
+}
+.news-card__link:hover {
+  background: rgba(245, 246, 247, 1);
+    transition: 0.2s linear;
 }
 
 @media screen and (max-width: 1000px) {

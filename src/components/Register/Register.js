@@ -8,7 +8,13 @@ function Register({
   isOpen,
   onClose,
   hadlePopup,
+  handleRegister,
+  authError
 }) {
+  const handleSubmit = (evt) => { 
+    evt.preventDefault(); 
+    handleRegister(isValidInput); 
+  }; 
   return (
     <PopupWithForm
       isOpen={isOpen}
@@ -19,6 +25,8 @@ function Register({
       link="Войти"
       hadlePopup={hadlePopup}
       isValid={isValid}
+      onSubmit={handleSubmit}
+      authError={authError}
     >
       <p className="popup__text">Email</p>
       <input
@@ -46,15 +54,16 @@ function Register({
       <span className="popup__input-error">{errorMessage.password}</span>
       <p className="popup__text">Имя</p>
       <input
-        name="text"
+        name="name"
         className="popup__input"
         type="text"
         placeholder="Введите своё имя"
         minLength="2"
         onChange={handleChange}
-        value={isValidInput.text || ""}
+        value={isValidInput.name || ""}
+        required
       />
-      <span className="popup__input-error">{errorMessage.text}</span>
+      <span className="popup__input-error">{errorMessage.name}</span>
     </PopupWithForm>
   );
 }

@@ -8,7 +8,14 @@ function Login({
   isOpen,
   onClose,
   hadlePopup,
-}) {
+  handleLogin,
+  authError
+})
+{
+  function handleSubmit(e) {
+    e.preventDefault();
+    handleLogin(isValidInput);
+  };
   return (
     <PopupWithForm
       isOpen={isOpen}
@@ -19,6 +26,8 @@ function Login({
       link="Зарегистрироваться"
       hadlePopup={hadlePopup}
       isValid={isValid}
+      onSubmit={handleSubmit}
+      authError={authError}
     >
       <p className="popup__text">Email</p>
       <input

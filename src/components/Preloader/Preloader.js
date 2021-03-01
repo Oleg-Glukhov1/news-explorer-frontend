@@ -1,10 +1,10 @@
 import React from 'react';
 import './Preloader.css';
 
-function Preloader() {
+function Preloader({isPreloader}) {
     return (
-        <div className="preloader">
-            <i class="preloader-circle"></i>
+        <div className={isPreloader?  "preloader" : "preloader_inactive"}>
+            <i className="preloader-circle"></i>
             <p className="preloader-text">Идет поиск новостей...</p>
         </div>
     )
