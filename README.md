@@ -14,5 +14,5 @@
 + *Flexbox-вёрстка и Grid Layout*
 + *API*
 
-### [Ссылка](https://newsapi.org.) на сервис API
+### [Ссылка](https://newsapi.org) на сервис API
 ### [Ссылка](https://github.com/Oleg-Glukhov1/news-explorer-api) на репозиторий бэкенда
