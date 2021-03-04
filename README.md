@@ -5,7 +5,7 @@
 *Репозиторий для API проекта News Explorer, включающий авторизацию и регистрацию пользователей, поиск, сохранение и удаление новостных карточек.*
 
 ### Ссылка на проект
-***https://onglukhov.students.nomoreparties.xyz***
+***https://onglukhov.students.nomoredomains.monster***
 
 ### Для создания применялись технологии
 + *БЭМ*
